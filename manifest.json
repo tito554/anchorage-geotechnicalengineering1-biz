@@ -1,0 +1,20 @@
+{
+  "name": "Anchorage",
+  "short_name": "Anchorage",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0A2540",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "lang": "en",
+  "orientation": "portrait-secondary",
+  "scope": "/",
+  "description": "Professional geotechnical services in Anchorage, USA. Soil studies, testing and technical consulting.",
+  "id": "/anchorage-1404"
+}
