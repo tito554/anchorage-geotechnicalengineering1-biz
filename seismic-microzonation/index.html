@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Scope of work</h2><div>Consider two Anchorage neighborhoods: Midtown on glacial till versus Turnagain Arm on soft estuarine deposits. The difference in Vs30 between them can exceed 200 m/s. That changes your seismic design category by at least one tier. Seismic microzonation captures these lateral variations block by block. We deploy arrays of tromographs for HVSR measurements and active-source MASW transects. The data feeds directly into site-response models. For critical facilities like hospitals or fuel terminals, we run equivalent-linear and nonlinear deformation analyses. This granularity allows engineers to tailor foundation depth, reinforcement ratios, and lateral bracing per zone. We also cross-check results with <a href="../refraction-reflection/">tomography-seismic</a> surveys when deep discontinuities are suspected. The final product is a color-coded map with recommended design spectra for each sub-area.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Area-specific notes</h2><p>Anchorage sits on the Cook Inlet basin, underlain by up to 80 meters of glacial and alluvial sediments over bedrock. The water table is shallow in coastal zones, often within 3 meters of the surface. During strong shaking, saturated loose sands can liquefy. The 1964 event caused lateral spreads that destroyed entire neighborhoods in Turnagain. Seismic microzonation identifies which parcels fall on competent till versus soft floodplain. It also flags areas prone to differential settlement from cyclic softening. Without this map, your foundation design assumes uniform conditions that do not exist. The risk is not theoretical. Geotechnical teams have documented case histories of buildings that performed poorly because the site class was misassigned.</p>
+        <h2>Area-specific notes</h2><p>Anchorage sits on the Cook Inlet basin, underlain by up to 80 meters of glacial and alluvial sediments over bedrock. The water table is shallow in coastal zones, often within 3 meters of the surface. During strong shaking, saturated loose sands can liquefy. The 1964 event caused lateral spreads that destroyed entire neighborhoods in Turnagain. <a href="/seismic/">Seismic</a> microzonation identifies which parcels fall on competent till versus soft floodplain. It also flags areas prone to differential settlement from cyclic softening. Without this map, your foundation design assumes uniform conditions that do not exist. The risk is not theoretical. Geotechnical teams have documented case histories of buildings that performed poorly because the site class was misassigned.</p>
 
         
     <section class="block mid-cta-6e0a-6e0a" style="padding:2rem 0">

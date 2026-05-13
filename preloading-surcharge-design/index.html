@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Scope of work</h2><div>Anchorage winters freeze the ground to depths exceeding two meters. That freeze-thaw cycle complicates every preloading with surcharge design. The thaw-weakened subgrade can lose up to 50 percent of its bearing capacity if not handled correctly. To counter this, the design typically applies surcharge loads during summer months when the active layer is fully thawed. This allows the soft clay and silt layers to consolidate under a temporary load higher than the final structure load. The surcharge is then removed before foundation construction. For deep soft deposits, we also recommend <a href="../prefabricated-vertical-drain/">vertical drains</a> to shorten drainage paths. The combination of surcharge and drains cuts consolidation time from years to months. Anchorage engineers rely on this method for warehouses, fuel tanks, and road embankments.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Area-specific notes</h2><p>The Bootlegger Cove Formation at depths of 10 to 30 meters is a high-plasticity clay (CH) with undrained shear strengths as low as 20 kPa. This layer is notorious for causing delayed settlements and stability failures. A preloading with surcharge design in Anchorage that ignores the rate of strength gain risks a slope failure during fill placement. The 1964 Good Friday earthquake triggered widespread landslides in this same formation. Today, our preloading with surcharge design incorporates staged loading with pore pressure dissipation checks to maintain a factor of safety above 1.4 during construction. The seismic risk also requires evaluating cyclic softening of the clay under surcharge load.</p>
+        <h2>Area-specific notes</h2><p>The Bootlegger Cove Formation at depths of 10 to 30 meters is a high-plasticity clay (CH) with undrained shear strengths as low as 20 kPa. This layer is notorious for causing delayed settlements and stability failures. A preloading with surcharge design in Anchorage that ignores the rate of strength gain risks a slope failure during fill placement. The 1964 Good Friday earthquake triggered widespread landslides in this same formation. Today, our preloading with surcharge design incorporates staged loading with pore pressure dissipation checks to maintain a <a href="/factor-safety/">factor of safety</a> above 1.4 during construction. The seismic risk also requires evaluating cyclic softening of the clay under surcharge load.</p>
 
         
     <section class="block mid-cta-6e0a-6e0a" style="padding:2rem 0">

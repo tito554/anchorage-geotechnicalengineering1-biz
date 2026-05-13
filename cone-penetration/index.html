@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Scope of work</h2><div>A frequent observation in Anchorage is that energy-corrected SPT N-values in dense gravels can be misleadingly high, whereas the CPT cone tip resistance (qt) provides a more repeatable measure of relative density. By analyzing the friction ratio (Rf), the team can differentiate clean sands from silty materials common in fluvial terraces without relying on visual classification alone. The cone penetrometer also measures pore pressure (u2), which is invaluable for identifying artesian conditions beneath downtown Anchorage. Before committing to driven piles, many local engineers request a <a href="../flat-dilatometer/">dilatometer test</a> alongside the CPT to estimate lateral stress and modulus, particularly in overconsolidated clays near the airport.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Area-specific notes</h2><p>Anchorage sits at latitude 61°N on the Pacific Ring of Fire, a region that produced the 1964 magnitude 9.2 earthquake. That event unleashed widespread liquefaction and lateral spreading along the coastal plains. A standard SPT log may not capture the thin, loose sand interbeds that trigger liquefaction under cyclic loading. The CPT's continuous pore pressure trace, however, reveals those critical layers directly. By correlating the cone resistance with the Robertson & Wride (1998) liquefaction triggering curves, our engineers produce a layer-by-layer factor-of-safety profile that helps avoid catastrophic foundation failure during a seismic event.</p>
+        <h2>Area-specific notes</h2><p>Anchorage sits at latitude 61°N on the Pacific Ring of Fire, a region that produced the 1964 magnitude 9.2 earthquake. That event unleashed widespread liquefaction and lateral spreading along the coastal plains. A standard SPT log may not capture the thin, loose sand interbeds that trigger liquefaction under cyclic loading. The CPT's continuous pore pressure trace, however, reveals those critical layers directly. By correlating the cone resistance with the Robertson & Wride (1998) liquefaction triggering curves, our engineers produce a layer-by-layer factor-of-safety profile that helps avoid catastrophic foundation failure during a <a href="/seismic/">seismic</a> event.</p>
 
         
     <section class="block mid-cta-6e0a-6e0a" style="padding:2rem 0">

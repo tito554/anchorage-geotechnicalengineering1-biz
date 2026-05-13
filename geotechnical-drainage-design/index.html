@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Scope of work</h2><div>On a recent multi-story project in the Turnagain area, high groundwater from Cook Inlet tidal influence demanded a drainage design that could handle both saturated conditions and frost action. We installed perimeter drains, granular blankets, and outlet structures sized for Anchorage's 24-hour rainfall intensity. Before that, we ran <a href="../triaxial/">ensayo triaxial</a> on undisturbed samples to verify the soil's drained shear strength under the expected water pressures. The system also included a <a href="../ground-penetrating-radar/">georradar GPR</a> survey to locate buried ice lenses, which we then addressed with thermal insulation layers. Each element was calibrated to the site's specific stratigraphy and the local building code requirements.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Area-specific notes</h2><p>IBC Chapter 18 and ASCE 7 require that drainage systems prevent hydrostatic pressure buildup against foundations, which is especially critical in Anchorage's freeze-thaw environment. If water is not evacuated before the ground freezes, ice lenses can form beneath slabs and footings, creating heave forces that crack walls and lift floors. Our designs follow ASTM D1586 and D2487 classification to ensure the aggregate filters and pipe bedding remain stable under seasonal moisture changes. We also evaluate the risk of thaw-induced pore pressure spikes that can reduce bearing capacity.</p>
+        <h2>Area-specific notes</h2><p>IBC Chapter 18 and ASCE 7 require that drainage systems prevent hydrostatic pressure buildup against <a href="/foundations/">foundations</a>, which is especially critical in Anchorage's freeze-thaw environment. If water is not evacuated before the ground freezes, ice lenses can form beneath slabs and footings, creating heave forces that crack walls and lift floors. Our designs follow ASTM D1586 and D2487 classification to ensure the aggregate filters and pipe bedding remain stable under seasonal moisture changes. We also evaluate the risk of thaw-induced pore pressure spikes that can reduce bearing capacity.</p>
 
         
     <section class="block mid-cta-6e0a-6e0a" style="padding:2rem 0">

@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Scope of work</h2><div>The geology beneath Anchorage is dominated by the Bootlegger Cove Formation — a glaciomarine clay that varies from stiff to extremely sensitive. Downslope, you find colluvium and alluvial fans with cobbles mixed into a silty matrix. Groundwater sits shallow, often at 1.5 to 3 meters, and seasonal freeze-thaw cycles crack the surface. For a proper slope failure analysis, we first survey the site with a drone to map tension cracks and scarps, then drill boreholes to log stratigraphy. We also run ensayo triaxial on undisturbed samples to measure drained and undrained shear strengths under in-situ confining pressures. This combination gives us the parameters needed for both circular and non-circular failure surfaces.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Area-specific notes</h2><p>What catches many developers off guard in Anchorage is the combination of high seismicity and sensitive clays. A moderate earthquake can trigger liquefaction in the sandy lenses within the Bootlegger Cove Formation, which then causes the overlying clay to lose strength and flow. We have mapped several ancient landslide complexes near Huffman Road and the South Fork of Campbell Creek that reactivate every few decades. The real risk is not just the first-time slide — it is the progressive failure that follows, where each winter's freeze-thaw cycle opens new cracks that fill with water come spring. Ignoring that cycle has led to million-dollar repairs on residential subdivisions.</p>
+        <h2>Area-specific notes</h2><p>What catches many developers off guard in Anchorage is the combination of high <a href="/seismic/">seismicity</a> and sensitive clays. A moderate earthquake can trigger liquefaction in the sandy lenses within the Bootlegger Cove Formation, which then causes the overlying clay to lose strength and flow. We have mapped several ancient landslide complexes near Huffman Road and the South Fork of Campbell Creek that reactivate every few decades. The real risk is not just the first-time slide — it is the progressive failure that follows, where each winter's freeze-thaw cycle opens new cracks that fill with water come spring. Ignoring that cycle has led to million-dollar repairs on residential subdivisions.</p>
 
         
     <section class="block mid-cta-6e0a-6e0a" style="padding:2rem 0">

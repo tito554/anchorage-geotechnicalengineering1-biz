@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Scope of work</h2><div>The drilling rigs used for micropile work in Anchorage are compact enough to navigate tight downtown lots near 3rd Avenue. They install high-strength steel casing through the active layer and socket into competent till or bedrock. The design relies on grout-to-ground bond resistance, which we verify with site-specific <a href="../plate-load/">plate load tests</a> and strain gauge monitoring. Typical parameters include:<ul><li>Drill hole diameter: 6 to 12 inches</li><li>Steel reinforcement: Grade 75 or 80 threaded bars</li><li>Grout strength: 4,000 psi minimum at 28 days</li></ul>We also cross-check local data against <a href="../site-response-analysis/">seismic site response models</a> to ensure the pile group does not amplify ground motion. The combination of small equipment and high load capacity makes micropiles a practical choice for Anchorage's variable subsurface.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Area-specific notes</h2><p>Anchorage sits in a high-seismicity zone with active faults like the Castle Mountain Fault running south of the city. The primary risk during earthquake loading is tension failure in the pile-to-cap connection. Micropiles rely on steel core continuity through the plastic hinge zone, so insufficient embedment can cause pullout. Another concern is lateral spreading of liquefiable alluvial soils—a common issue in the Turnagain Arm area. Our design includes a 6-inch minimum clearance around the casing to accommodate lateral displacement without crushing the grout. We also require proof testing to 200% of design load for at least 5% of production piles.</p>
+        <h2>Area-specific notes</h2><p>Anchorage sits in a high-<a href="/seismic/">seismicity</a> zone with active faults like the Castle Mountain Fault running south of the city. The primary risk during earthquake loading is tension failure in the pile-to-cap connection. Micropiles rely on steel core continuity through the plastic hinge zone, so insufficient embedment can cause pullout. Another concern is lateral spreading of liquefiable alluvial soils—a common issue in the Turnagain Arm area. Our design includes a 6-inch minimum clearance around the casing to accommodate lateral displacement without crushing the grout. We also require proof testing to 200% of design load for at least 5% of production piles.</p>
 
         
     <section class="block mid-cta-6e0a-6e0a" style="padding:2rem 0">

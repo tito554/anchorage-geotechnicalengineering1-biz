@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Scope of work</h2><div>Anchorage grew fast after the 1964 earthquake, and much of the road network was built on variable subgrade. The laboratory CBR test in Anchorage became a standard requirement for municipal and state projects. The test follows ASTM D1883, where a compacted soil specimen is soaked for four days and then penetrated with a piston. The load-penetration curve yields the CBR value. In Anchorage, the freeze-thaw cycle can lower soaked CBR by 30 to 50 percent. The lab accounts for that by testing both soaked and unsoaked conditions. For pavement sections on the Seward Highway or the Glenn Highway, the design CBR is often the soaked value. The test is complemented with a <a href="/">subgrade soil classification</a> to identify swelling or frost-susceptible materials. When the subgrade contains gravel, coarser fractions are removed and a correction factor is applied. The laboratory CBR in Anchorage also supports airport pavement design at Ted Stevens Anchorage International Airport, where heavy aircraft loads demand high-quality subgrade data.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Area-specific notes</h2><p>In Anchorage, many engineered fills look good dry but collapse when saturated. We routinely see CBR values drop from 15 to 4 after the four-day soak. That difference can mean a pavement section that fails in two years instead of twenty. The risk is real: a developer once built a subdivision road on a sandy silt subgrade without laboratory CBR testing. The road cracked and heaved within the first spring thaw. The laboratory CBR test in Anchorage catches that hidden weakness. Without it, the subgrade is an unknown variable. The test is cheap insurance against early pavement failure.</p>
+        <h2>Area-specific notes</h2><p>In Anchorage, many engineered fills look good dry but collapse when saturated. We routinely see CBR values drop from 15 to 4 after the four-day soak. That difference can mean a pavement section that fails in two years instead of twenty. The risk is real: a developer once built a subdivision road on a sandy silt subgrade without <a href="/laboratory/">laboratory</a> CBR testing. The road cracked and heaved within the first spring thaw. The laboratory CBR test in Anchorage catches that hidden weakness. Without it, the subgrade is an unknown variable. The test is cheap insurance against early pavement failure.</p>
 
         
     <section class="block mid-cta-6e0a-6e0a" style="padding:2rem 0">

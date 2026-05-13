@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Scope of work</h2><div>Anchorage experiences freeze-thaw cycles for over five months of the year. This affects soil structure and permeability values. Our lab procedures account for that. We condition samples to simulate spring thaw conditions when the ground is saturated. The falling head method is preferred for fine-grained soils typical of the Turnagain Arm area. Constant head works well for the coarse outwash deposits near the Hillside. We run tests at multiple hydraulic gradients to detect non-Darcian flow. Key parameters we report include hydraulic conductivity (k), void ratio, and degree of saturation. We also measure temperature and correct to 20°C per ASTM standard. All results include a detailed summary of sample preparation, compaction method, and test conditions. This lets your geotechnical engineer make informed decisions for drainage design and <a href="../slope-stability-analysis/">slope stability analysis</a>.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Area-specific notes</h2><p>The 1964 Good Friday earthquake (M9.2) triggered widespread soil liquefaction and lateral spreading in Anchorage. Much of the damage was linked to saturated, loose sandy soils. Permeability controls how fast pore pressure dissipates under cyclic loading. Low permeability traps water, raising liquefaction risk. High permeability drains water but can cause piping. A laboratory permeability test quantifies this drainage rate. We measure k directly on undisturbed or reconstituted samples. Results help identify zones where drainage layers or vertical drains are needed. Ignoring permeability in this seismic region means designing blind. We always recommend pairing k values with cyclic triaxial data for a full liquefaction assessment.</p>
+        <h2>Area-specific notes</h2><p>The 1964 Good Friday earthquake (M9.2) triggered widespread soil liquefaction and lateral spreading in Anchorage. Much of the damage was linked to saturated, loose sandy soils. Permeability controls how fast pore pressure dissipates under cyclic loading. Low permeability traps water, raising liquefaction risk. High permeability drains water but can cause piping. A <a href="/laboratory/">laboratory</a> permeability test quantifies this drainage rate. We measure k directly on undisturbed or reconstituted samples. Results help identify zones where drainage layers or vertical drains are needed. Ignoring permeability in this seismic region means designing blind. We always recommend pairing k values with cyclic triaxial data for a full liquefaction assessment.</p>
 
         
     <section class="block mid-cta-6e0a-6e0a" style="padding:2rem 0">

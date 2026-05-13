@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Scope of work</h2><div>The contrast between the sandy outwash deposits in the Hillside area and the silty clay of the Ship Creek valley creates very different remediation challenges. In the Hillside, where the soil is more permeable, a diesel spill can migrate quickly through the gravelly layers, requiring aggressive soil vapor extraction. Over near the Port of Anchorage, the fine-grained sediments hold onto contaminants like a sponge, making in-situ chemical oxidation less effective and favoring ex-situ thermal desorption instead. For sites along Northern Lights Boulevard, where shallow groundwater sits just a few feet down, we often combine excavation with a permeable reactive barrier to capture any residual contamination before it reaches Cook Inlet. Each neighborhood demands a tailored approach — there is no one-size-fits-all treatment for contaminated soil in Anchorage.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Area-specific notes</h2><p>The freeze-thaw cycle in Anchorage — we get 120+ days below freezing — creates a unique risk for remediation projects. If you excavate contaminated soil in November and don't backfill before the ground locks up, the exposed subgrade can heave and crack adjacent foundations. We saw that happen on a redevelopment near Merrill Field where the contractor left an excavation open over the winter; the adjacent pavement slab lifted 4 inches. Our team always sequences remediation work to complete excavation, backfill, and compaction before the first hard frost, or we use insulated blankets and temporary heating if the schedule forces a winter dig.</p>
+        <h2>Area-specific notes</h2><p>The freeze-thaw cycle in Anchorage — we get 120+ days below freezing — creates a unique risk for remediation projects. If you excavate contaminated soil in November and don't backfill before the ground locks up, the exposed subgrade can heave and crack adjacent <a href="/foundations/">foundations</a>. We saw that happen on a redevelopment near Merrill Field where the contractor left an excavation open over the winter; the adjacent pavement slab lifted 4 inches. Our team always sequences remediation work to complete excavation, backfill, and compaction before the first hard frost, or we use insulated blankets and temporary heating if the schedule forces a winter dig.</p>
 
         
     <section class="block mid-cta-6e0a-6e0a" style="padding:2rem 0">
